@@ -1,0 +1,204 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_mean",
+      "description": "impute_missing_value_using_mean(symbol: str) -> pandas.core.frame.DataFrame - Impute Missing Values of a column in a dataset using Mean.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_spline_imputation",
+      "description": "impute_missing_value_using_spline_imputation(symbol: str) -> pandas.core.frame.DataFrame - Imputes missing values in a column using quadratic spline interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_linear_imputation",
+      "description": "impute_missing_value_using_linear_imputation(symbol: str) -> pandas.core.frame.DataFrame - Imputes missing values in a column using linear interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_back_fill_imputation",
+      "description": "impute_missing_value_using_back_fill_imputation(symbol: str) -> pandas.core.frame.DataFrame - Imputes missing values in a column using backfill interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_forward_fill_imputation",
+      "description": "impute_missing_value_using_forward_fill_imputation(symbol: str) -> pandas.core.frame.DataFrame - Imputes missing values in a column using forward interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_mode",
+      "description": "impute_missing_value_using_mode(symbol: str) -> pandas.core.frame.DataFrame - Impute Missing Values of a column in a dataset using mode.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_min_value",
+      "description": "impute_missing_value_using_min_value(symbol: str) -> pandas.core.frame.DataFrame - Impute Missing Values of a column in a dataset using min_value.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_max_value",
+      "description": "impute_missing_value_using_max_value(symbol: str) -> pandas.core.frame.DataFrame - Impute Missing Values of a column in a dataset using max_value.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "drop_feature_column",
+      "description": "drop_feature_column(symbol: str) -> pandas.core.frame.DataFrame - Drop Feature Column from the DataFrame\n\nArgs:\nsymbol (str): Column/Feature name that is to be dropped.\n\nReturns:\npd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "remove_row_by_index",
+      "description": "remove_row_by_index(symbol: str) -> pandas.core.frame.DataFrame - Drop Rows based on index from the DataFrame\n\nArgs:\nsymbol (str): Row ID name that is to be dropped.\n\nReturns:\npd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "extract_data_between_dates",
+      "description": "extract_data_between_dates(initial_date: str, final_date: str) -> pandas.core.frame.DataFrame - Extract Rows between two dates from the DataFrame\n\nArgs:\ninitial_date (str): Initial Date.\n\nReturns:\npd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "initial_date": {
+            "type": "string"
+          },
+          "final_date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "initial_date",
+          "final_date"
+        ]
+      }
+    }
+  }
+]

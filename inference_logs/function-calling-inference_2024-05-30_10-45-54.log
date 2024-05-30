@@ -1,0 +1,107 @@
+2024-05-30:10:45:54,604 INFO     [functioncall.py:36] None
+2024-05-30:10:45:56,079 INFO     [functioncall.py:36] None
+2024-05-30:10:46:01,022 INFO     [functioncall.py:36] None
+2024-05-30:10:46:21,185 INFO     [functioncall.py:64] LlamaConfig {
+  "_name_or_path": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "eos_token_id": 128003,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.41.0.dev0",
+  "use_cache": true,
+  "vocab_size": 128288
+}
+
+2024-05-30:10:46:21,187 INFO     [functioncall.py:65] GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128003
+}
+
+2024-05-30:10:46:21,188 INFO     [functioncall.py:66] {'bos_token': '<|begin_of_text|>', 'eos_token': '<|im_end|>', 'pad_token': '<|im_end|>'}
+2024-05-30:10:46:22,445 INFO     [functioncall.py:64] LlamaConfig {
+  "_name_or_path": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "eos_token_id": 128003,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.41.0.dev0",
+  "use_cache": true,
+  "vocab_size": 128288
+}
+
+2024-05-30:10:46:22,447 INFO     [functioncall.py:65] GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128003
+}
+
+2024-05-30:10:46:22,447 INFO     [functioncall.py:66] {'bos_token': '<|begin_of_text|>', 'eos_token': '<|im_end|>', 'pad_token': '<|im_end|>'}
+2024-05-30:10:46:48,281 INFO     [functioncall.py:76] parsed tool calls:
+[
+  {
+    "arguments": {
+      "symbol": "Unnamed: 0"
+    },
+    "name": "drop_feature_column"
+  }
+]
+2024-05-30:10:46:48,282 INFO     [functioncall.py:155] Assistant Message 1 :
+<tool_call>
+{"arguments": {"symbol": "Unnamed: 0"}, "name": "drop_feature_column"}
+</tool_call>
+
+2024-05-30:10:46:48,282 INFO     [functioncall.py:95] Invoking function call drop_feature_column ...
+2024-05-30:10:46:48,333 INFO     [functioncall.py:164] Here's the response from the function call: drop_feature_column
+{"name": "drop_feature_column", "content":      Market_Name Commodity Variety Grade  Min_Price  Max_Price  Modal_Price  Price_Date
+0      Bangalore     Wheat   Local   FAQ     2300.0     3500.0  2900.000000  2015-01-01
+1      Bangalore     Wheat   Local   FAQ     2300.0     3500.0  2900.000000  2015-01-01
+2      Bangalore     Wheat   Local   FAQ     2300.0     3500.0  2900.000000  2015-01-01
+3      Bangalore     Wheat   Local   FAQ     2300.0     3500.0  2900.000000  2015-01-01
+4      Bangalore     Wheat   Local   FAQ     2350.0     3000.0  2650.000000  2015-01-02
+...          ...       ...     ...   ...        ...        ...          ...         ...
+1824   Bangalore     Wheat   Local   FAQ     2400.0     3000.0  2700.000000  2019-12-27
+1825   Bangalore     Wheat   Local   FAQ        NaN        NaN  3177.629846  2019-12-28
+1826   Bangalore     Wheat   Local   FAQ        NaN        NaN  3177.632003  2019-12-29
+1827   Bangalore     Wheat   Local   FAQ     2400.0     3000.0  2700.000000  2019-12-30
+1828   Bangalore     Wheat   Local   FAQ     2400.0     3000.0  2700.000000  2019-12-31
+
+[1829 rows x 8 columns]}

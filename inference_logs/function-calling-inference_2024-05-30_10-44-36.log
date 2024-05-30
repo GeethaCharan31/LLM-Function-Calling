@@ -1,0 +1,76 @@
+2024-05-30:10:44:36,443 INFO     [functioncall.py:36] None
+2024-05-30:10:44:50,847 INFO     [functioncall.py:36] None
+2024-05-30:10:44:55,162 INFO     [functioncall.py:64] LlamaConfig {
+  "_name_or_path": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "eos_token_id": 128003,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.41.0.dev0",
+  "use_cache": true,
+  "vocab_size": 128288
+}
+
+2024-05-30:10:44:55,164 INFO     [functioncall.py:65] GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128003
+}
+
+2024-05-30:10:44:55,164 INFO     [functioncall.py:66] {'bos_token': '<|begin_of_text|>', 'eos_token': '<|im_end|>', 'pad_token': '<|im_end|>'}
+2024-05-30:10:45:02,732 INFO     [functioncall.py:64] LlamaConfig {
+  "_name_or_path": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "eos_token_id": 128003,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.41.0.dev0",
+  "use_cache": true,
+  "vocab_size": 128288
+}
+
+2024-05-30:10:45:02,734 INFO     [functioncall.py:65] GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128003
+}
+
+2024-05-30:10:45:02,734 INFO     [functioncall.py:66] {'bos_token': '<|begin_of_text|>', 'eos_token': '<|im_end|>', 'pad_token': '<|im_end|>'}

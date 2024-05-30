@@ -1,0 +1,275 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_mean",
+      "description": "Impute Missing Values of a column in a dataset using Mean.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_spline_imputation",
+      "description": "Imputes missing values in a column using quadratic spline interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "column_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "column_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_linear_imputation",
+      "description": "Imputes missing values in a column using linear interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_back_fill_imputation",
+      "description": "Imputes missing values in a column using backfill interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_forward_fill_imputation",
+      "description": "Imputes missing values in a column using forward interpolation.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_mode",
+      "description": "Impute Missing Values of a column in a dataset using mode.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_min_value",
+      "description": "Impute Missing Values of a column in a dataset using min_value.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "impute_missing_value_using_max_value",
+      "description": "Impute Missing Values of a column in a dataset using max_value.\n\nArgs:\nsymbol (str): Column/Feature name that is to be imputed.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "drop_feature_column",
+      "description": "Drop Feature Column from the DataFrame\n\nArgs:\nsymbol (str): Column/Feature name that is to be dropped.\n\nReturns:\npd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "remove_row_by_index",
+      "description": "Drop Rows based on index from the DataFrame\n\nArgs:\nsymbol (str): Row ID name that is to be dropped.\n\nReturns:\npd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "extract_data_between_dates",
+      "description": "Extract Rows between two dates from the DataFrame\nArgs:\n    tool_input (Dict): Dictionary containing the following keys:\n        'date1' (str): Initial Date.\n        'date2' (str): Final Date.\nReturns:\n    pd.DataFrame: Updated Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "tool_input": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "tool_input"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "remove_duplicate_rows",
+      "description": "Removes duplicate rows from a DataFrame based on specified columns.\nArgs: None\nReturns: pd.DataFrame: A new DataFrame with duplicate rows removed.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "plot_time_series_graph",
+      "description": "Plots a time series graph from a DataFrame using Plotly and returns the figure object.\n\nArgs:\n    feature_col (str): The name of the column containing the feature values to plot.\n\nReturns:\n    go.Figure: The generated Plotly figure object representing the plot.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "feature_col": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "feature_col"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_null_value_counts",
+      "description": "Returns a DataFrame showing the number of null values in each column.\n\nArgs:\n    symbol (str): Dummy Argument\n\nReturns:\n    pd.DataFrame: A new DataFrame with two columns: 'column' (column names) and 'null_count' (number of null values).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "auto_arima",
+      "description": "Forecast using ARIMA.\n\nArgs: symbol (str): Column/Feature name.\n\nReturns:\npd.DataFrame: Imputed Dataframe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "column_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "column_name"
+        ]
+      }
+    }
+  }
+]
